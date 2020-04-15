@@ -3,6 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_slider_anim_nav/bloc/navigation_bloc/navigation_bloc.dart';
+import 'package:flutter_slider_anim_nav/string/colors.dart';
 import 'package:rxdart/rxdart.dart';
 
 import 'menu_item.dart';
@@ -70,7 +71,7 @@ class _SideBarState extends State<SideBar>
               Expanded(
                 child: Container(
                   padding: const EdgeInsets.symmetric(horizontal: 20),
-                  color: const Color(0xFF262AAA),
+                  color: MyColors().drawerColor,
                   child: Column(
                     children: <Widget>[
                       SizedBox(
@@ -167,7 +168,7 @@ class _SideBarState extends State<SideBar>
                     child: Container(
                       width: 35,
                       height: 110,
-                      color: Color(0xFF262AAA),
+                      color: MyColors().drawerColor,
                       alignment: Alignment.centerLeft,
                       child: AnimatedIcon(
                         progress: _animationController.view,
